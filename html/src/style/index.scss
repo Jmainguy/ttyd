@@ -5,13 +5,19 @@ body {
   margin: 0;
   overflow: hidden;
   -webkit-text-size-adjust: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #terminal-container {
-  width: auto;
-  height: 100%;
+  width: 80%; /* Adjust width as needed */
+  height: 80%; /* Adjust height as needed */
   margin: 0 auto;
   padding: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  background-color: #f9f9f9; /* Optional: Add a background color */
   .terminal {
     padding: 5px;
     height: calc(100% - 10px);
@@ -21,6 +27,10 @@ body {
 
 /* Media query for mobile devices */
 @media screen and (max-width: 768px) {
+  #terminal-container {
+    width: 90%; /* Adjust width for mobile */
+    height: 70%; /* Adjust height for mobile */
+  }
   #terminal-container .terminal {
     padding: 2px;
     height: calc(100% - 4px);
