@@ -4,6 +4,7 @@ body {
   min-height: 100%;
   margin: 0;
   overflow: hidden;
+  -webkit-text-size-adjust: 100%;
 }
 
 #terminal-container {
@@ -14,5 +15,14 @@ body {
   .terminal {
     padding: 5px;
     height: calc(100% - 10px);
+    font-size: 16px; /* Better default size for mobile */
+  }
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  #terminal-container .terminal {
+    padding: 2px;
+    height: calc(100% - 4px);
   }
 }
